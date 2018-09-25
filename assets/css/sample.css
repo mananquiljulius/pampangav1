@@ -1,0 +1,191 @@
+/*/*/*.effect {
+  padding: 10px;
+}
+.effect:before, .effect:after {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-color: #2B2D42;
+}
+.effect:before {
+  border-width: 2px 0 2px 0;
+  transform: scaleX(0);
+}
+.effect:after {
+  border-width: 0 2px 0 2px;
+  transform: scaleY(0);
+}
+.effect:hover:before, .effect:hover:after {
+  transform: scale(1, 1);
+}
+
+#navhome, #navhome > span {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  line-height: 24px;
+}
+#navhome:before, #navhome:after, #navhome > span:before, #navhome > span:after {
+  content: '';
+  position: absolute;
+  transition: transform .8s ease;
+}
+
+
+.nav-item {
+  font-size: 20px;  
+}
+#navhome {
+  color: #2B2D42;
+  text-align: center;
+}
+
+#mynav {
+  background-color: #EDF2F4;  
+    width: 100%;
+}
+
+#mynav a {
+  display: block;
+}
+
+#navH {
+  color: black;
+  margin: 0 auto;
+  display: block;
+}
+
+
+
+
+
+.imgtd {
+background-size: contain;
+  background-position: center center;
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
+}
+
+
+
+
+#sidebarMenu {
+
+ height: 95vh;
+ position: fixed; 
+ left: 0;
+ width: auto;
+ margin-top: 50vh;
+
+background: linear-gradient(180deg,#EDF2F4 40%,#2B2D42 90%)
+}
+
+#sidebarMenu li span {
+  /*padding-top: 10px;*/
+  display: block;
+  font-size: 20px;
+  /*color: rgba(255,255,255,0.50);*/
+  color: #2B2D42;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#sidebarMenu li a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+input[type=checkbox] ~ #sidebarMenu {
+  transform: translateX(0);
+
+}
+
+input[type=checkbox]:checked ~ #sidebarMenu {
+  transform: translateX(0);
+  /*visibility: visible;*/
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+
+input[type="checkbox"]:not(:checked) ~ #sidebarMenu {
+  opacity: 0;
+   transition: opacity 1s linear;
+}
+
+input[type=checkbox] {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none;
+}
+
+.sidebarIconToggle {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  top: 22px;
+  left: 15px;
+  height: 22px;
+  width: 22px;
+
+}
+.spinner {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+
+}
+
+.horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+
+.diagonal.part-1 {
+  position: relative;
+  transform: all 0.3s;
+  box-sizing: border-box;
+  float: left;
+margin-top: 3px;
+
+}
+.diagonal.part-2 {
+  position: relative;
+  transform: all 0.3s;
+  box-sizing: border-box;
+  float: left;
+  margin-top: 3px;
+  
+}
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal{
+  transition: all 0.3s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1{
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  margin-top: 8px;
+}
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2{
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(-135deg);
+  margin-top: -8px;
+}*/*/*/
