@@ -168,7 +168,7 @@ section {
 	font-weight: bold;
 	font-size: 25px;
 	/*margin-left: 50px;*/
-	margin-right: -50px;
+	/*margin-right: -50px;*/
 	color: #2B2D42;
 	font-family: 'Inconsolata', monospace;
 }
@@ -353,7 +353,7 @@ section {
  		margin-left: 115px;
  	}
  	.brandcs {
- 		margin-left: 100px;
+ 		/*margin-left: 100px;*/
  	}
  	#aboutpampimg {
  		height: 300px;
@@ -385,15 +385,16 @@ section {
  	.sblink {
  		font-size: 16px;
  	}
- 	#bttimg {
+ 	img#bttimg {
  		/*height: 5vh;*/
- 		width: 150%;
+ 		width: 40%;
+    padding: 0px;
  		/*margin-left: 50px;*/
  		/*right: 20px;*/
  	}
  	#backtotop {
- 		right: 50px;
- 		left: 300px;
+ 		/*right: 50px;*/
+ 		/*left: 300px;*/
  	}
  	.card {
  		height: 60vh;
@@ -414,60 +415,81 @@ section {
 
 }
 
+.navbar-header {
+    float: right;
+    /*padding: 15px;*/
+    text-align: center;
+    width: 100%;
+}
+
 
 }
+
+
+
 @media (min-width: 768px) and (max-width: 1024px){
 	.jumbotron1
- 		 {
-    	font-size: 15px;
- 		 }
- 	.tdh
- 		{
- 		font-size: 45px;
- 		padding: 0;
- 		margin: 0;
- 		}
- 	#brandtd {
- 		margin-left: 320px;
- 	}
- 	.brandcs {
- 		margin-left: 310px;
- 	}
- 	#aboutpampimg {
- 		height: 600px;
- 	}
- 	.fg-overlay p.foodtext {
- 		font-size: 30px;
- 	}
- 	.fg-overlay h2.foodheader {
- 		font-size: 42px;
- 	}
- 	.sblink {
- 		font-size: 30px;
- 	}
- 	.card-deck .card{
- 		width: 100px;
- 	}
- 	#bttimg {
- 		/*height: 5vh;*/
- 		width: 80%;
- 		/*margin-left: 50px;*/
- 		/*right: 20px;*/
- 	}
- 	div.card {
- 		display: block;
- 		height: 50px;
- 		border: black;
- 		margin-top: 20px;
- 	}
- 	div.feature-gallery {
-	width: 80%;
-	margin-top: 20px;
-   	margin-bottom: 50px;
-    overflow: hidden;
-    position: relative;
-    margin-left: 70px;
-
+  {
+   font-size: 15px;
+ }
+ .tdh
+ {
+   font-size: 45px;
+   padding: 0;
+   margin: 0;
+ }
+ #brandtd {
+   margin-left: 320px;
+ }
+ .brandcs {
+   /*margin-left: 310px;*/
+ }
+ #aboutpampimg {
+   height: 600px;
+ }
+ .fg-overlay p.foodtext {
+   font-size: 30px;
+ }
+ .fg-overlay h2.foodheader {
+   font-size: 42px;
+ }
+ .sblink {
+   font-size: 30px;
+ }
+ .card-deck .card{
+   width: 100px;
+ }
+ #bttimg {
+   /*height: 5vh;*/
+   width: 80%;
+   /*margin-left: 50px;*/
+   /*right: 20px;*/
+ }
+ div.card {
+   display: block;
+   height: 50px;
+   border: black;
+   margin-top: 20px;
+ }
+ div.feature-gallery {
+   width: 80%;
+   margin-top: 20px;
+   margin-bottom: 50px;
+   overflow: hidden;
+   position: relative;
+   margin-left: 70px;
+ }
+ #bttimg {
+    /*height: 5vh;*/
+    /*width: 100%;*/
+    /*margin-left: 50px;*/
+    /*right: 20px;*/
+  }
+  .navbar-header {
+    float: right;
+    /*padding: 15px;*/
+    text-align: center;
+    width: 100%;
 }
 }
 
@@ -487,7 +509,13 @@ section {
  	#foodheader {
  		margin-top: 50px;
  	}
- 	
+ 	  img#bttimg {
+    /*height: 5vh;*/
+    width: 70%;
+    padding: 0px;
+    /*margin-left: 50px;*/
+    /*right: 20px;*/
+  }
 
 
 }
@@ -503,10 +531,19 @@ section {
 }
 
 
+.navbar-header {
+    float: right;
+    /*padding: 15px;*/
+    text-align: center;
+    width: 100%;
+    display: inline;
+}
 
 #mynav {
 	background-color: #EDF2F4;	
-  	width: 100%;
+  	/*width: 100%;*/
+    /*float: right;*/
+
 }
 
 #burgericon {
