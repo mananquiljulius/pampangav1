@@ -114,11 +114,12 @@ section {
 	margin-right: 5px;
 }
 
-.cardheight{
+/*.cardheight{
 	height: 150px;
-}
+}*/
 .card-footer{
-	color: red;
+	background-color: white;
+
 }
 
 .card-title {
@@ -510,6 +511,7 @@ section {
  		margin-top: 50px;
  	}
  	  img#bttimg {
+
     /*height: 5vh;*/
     width: 70%;
     padding: 0px;
